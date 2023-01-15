@@ -8,6 +8,7 @@ body{
   font-family: "メイリオ";
   background-color: rgb(61, 63, 70);
   color: aliceblue;
+  max-width: 1200px;
 }
 
 a{
@@ -46,12 +47,39 @@ h1{
   margin: 10px 10px 10px 10px;
   border:1px solid aliceblue;
 }
-table{
+
+.titleinfo{
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.titleinfo .border{
+  border-left: 2px solid #b8ddd1;
+  padding-left: 15px;
+}
+
+.titleinfo .info{
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 700px) {
+h4{
+  font-size: smaller;
+}
+}
+
+@media screen and (max-width: 480px) {
+h4{
+  font-size: x-small;
+}
+}
+
+/* table{
   width: auto;
   height: 210px;
   margin-top: 10px;
   padding-left: 10px;
-}
+} */
 
 .container2{
   margin-left: 50px;
@@ -73,6 +101,12 @@ table{
   padding-left: 10px;
 }
 
+@media screen and (max-width: 480px) {
+.description{
+  font-size: smaller;
+}
+}
+
 .container3{
   margin-left: 50px;
   margin-right: 50px;
@@ -80,6 +114,14 @@ table{
   flex-wrap: wrap;
   justify-content: start;
 } 
+
+
+/* @media screen and (max-width: 480px) {
+
+}
+/* 480pxまでの幅の場合に適応される */
+
+
 .container3 img {
   width: 200px;
   height: 300px;
